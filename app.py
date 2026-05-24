@@ -107,9 +107,11 @@ def load_models():
         logger.error(f"Error loading models: {str(e)}")
         raise
 
+
 # Load models when app starts
 load_models()
-
+with app.app_context():
+    db.create_all()
 
 @app.route('/')
 def home():
