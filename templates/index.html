@@ -6,7 +6,9 @@
     <meta name="description" content="AI-powered medical diagnosis system for early disease detection using machine learning" />
     <title>Medipridict AI - Professional Medical Diagnosis System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-    <link rel="icon"  href="static/images/logo.png">
+    {% comment %} <link rel="icon"  href="static/images/logo.png">
+     {% endcomment %}
+     <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
   </head>
   <body>
     <!-- NAVBAR -->
