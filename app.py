@@ -29,6 +29,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+app.secret_key = "medipredict_secret_key"
 app.config.from_object(DevelopmentConfig)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mediai_users.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
