@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - MediAI</title>
+    <title>Medipredict AI - Login</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="icon"  href="static/images/logo.png">
     <style>
@@ -271,9 +271,12 @@
 <body>
     <div class="auth-container">
         <div class="auth-box">
-            <div class="logo-section">
-                <h1>🏥 MediAI</h1>
-                <p style="color: #999; margin: 5px 0 0 0;">Intelligent Health Analytics</p>
+            <div class="logo-section" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 30px;">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Medipredict AI Logo" style="width: 50px; height: 50px;" />
+                <div>
+                    <h2 style="color: #22c55e; margin: 0; font-size: 24px;">Medipredict AI</h2>
+                    <p style="color: #999; margin: 5px 0 0 0; font-size: 12px;">Intelligent Health Analytics</p>
+                </div>
             </div>
 
             <h2>Login</h2>
